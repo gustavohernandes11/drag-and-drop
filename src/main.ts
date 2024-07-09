@@ -46,6 +46,8 @@ const handleDrop = (event: any) => {
 
 		draggableElement?.setAttribute("draggable", "false");
 		draggableElement?.classList.add("dragged");
+	} else {
+		event.target.classList.remove("droppable-hover");
 	}
 };
 
