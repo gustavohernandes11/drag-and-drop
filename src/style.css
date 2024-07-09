@@ -32,6 +32,12 @@ h1 {
 	padding: 2rem;
 }
 
+@media only screen and (max-width: 600px) {
+	.app {
+		padding: 1rem;
+	}
+}
+
 .draggable,
 .droppable {
 	display: flex;
@@ -45,7 +51,7 @@ h1 {
 @media only screen and (max-width: 600px) {
 	.draggable,
 	.droppable {
-		width: 5rem;
+		width: 6rem;
 	}
 }
 
