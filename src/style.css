@@ -42,6 +42,13 @@ h1 {
 	aspect-ratio: 1/1;
 }
 
+@media only screen and (max-width: 600px) {
+	.draggable,
+	.droppable {
+		width: 5rem;
+	}
+}
+
 .draggable:hover {
 	cursor: grab;
 }
@@ -53,10 +60,12 @@ h1 {
 
 .description {
 	font-size: 1.5rem;
-}
-
-.droppable.description {
 	pointer-events: none;
+}
+@media only screen and (max-width: 600px) {
+	.description {
+		font-size: 1rem;
+	}
 }
 
 .droppable.droppable-hover {
