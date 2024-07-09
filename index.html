@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<link rel="stylesheet" href="src/style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Drag and drop</title>
+	</head>
+	<body class="app">
+		<h1>Drag and drop</h1>
+		<p>
+			Esse é um experimento com a API de clique e arraste. Leve as cores
+			para a área correspondente.
+		</p>
+		<main class="container">
+			<span class="row">
+				<div
+					class="draggable"
+					style="background-color: rgb(74, 148, 72)"
+					id="green"
+					draggable="true"
+				></div>
+				<div
+					class="draggable"
+					style="background-color: rgb(133, 50, 50)"
+					id="red"
+					draggable="true"
+				></div>
+				<div
+					class="draggable"
+					style="background-color: rgb(67, 67, 136)"
+					id="blue"
+					draggable="true"
+				></div>
+				<div
+					class="draggable"
+					style="background-color: rgb(207, 193, 110)"
+					id="yellow"
+					draggable="true"
+				></div>
+				<div
+					class="draggable"
+					style="background-color: rgb(172, 135, 207)"
+					id="purple"
+					draggable="true"
+				></div>
+				<div
+					class="draggable"
+					style="background-color: rgb(211, 131, 78)"
+					id="orange"
+					draggable="true"
+				></div>
+			</span>
+			<span class="row">
+				<div class="droppable" data-draggable-id="orange">
+					<p class="description">Laranja</p>
+				</div>
+				<div class="droppable" data-draggable-id="blue">
+					<p class="description">Azul</p>
+				</div>
+				<div class="droppable" data-draggable-id="red">
+					<p class="description">Vermelho</p>
+				</div>
+				<div class="droppable" data-draggable-id="purple">
+					<p class="description">Roxo</p>
+				</div>
+				<div class="droppable" data-draggable-id="green">
+					<p class="description">Verde</p>
+				</div>
+				<div class="droppable" data-draggable-id="yellow">
+					<p class="description">Amarelo</p>
+				</div>
+			</span>
+		</main>
+		<script type="module" src="/src/main.ts"></script>
+	</body>
+</html>
